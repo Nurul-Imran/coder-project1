@@ -493,7 +493,6 @@ h2{
 }
 // car_button section
 .car_button{
-    background-image: url('../images/cars_button_bg.png');
     @include bg_control();
     min-height: 300px;
     @include minwidth(992px){
@@ -796,6 +795,9 @@ h2{
             justify-content: center;
         }
     }
+    .swiper-slide{
+        padding: 10px;
+    }
     .cardbox{
         height: 100%;
         position: relative;
@@ -803,6 +805,10 @@ h2{
         padding: 25px 10px;
         background-color: #ffffff36;
         font-weight: 600;
+        transition: 0.3s linear;
+        &:hover{
+            box-shadow: 0px 0px 10px 3px rgba(240,226,240,1);
+        }
         @include maxwidth(991px){
             max-width: 310px;
             margin: auto;
@@ -878,10 +884,6 @@ h2{
         }
         p{
             margin: 0px;
-        }
-        a{
-            text-decoration: none;
-            color: inherit;
         }
     }
 }

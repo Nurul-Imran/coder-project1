@@ -59,14 +59,14 @@ var swiper = new Swiper(".slider", {
 // testimonial_slider js code start 
 var swiper = new Swiper(".testimonial_slider", {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 10,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
   },
   keyboard: {
@@ -75,11 +75,11 @@ var swiper = new Swiper(".testimonial_slider", {
   breakpoints: {
   768: {
     slidesPerView: 2,
-    spaceBetween: 40,
+    spaceBetween: 30,
   },
   992: {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
   },
 },
 });
